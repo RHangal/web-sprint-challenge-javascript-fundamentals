@@ -16,7 +16,8 @@ function myFunction() {
 //myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// The nested function can access the internal variable because it exists outside the scope of the nested function but
+// still within the scope of myfunction
 
 
 
@@ -30,10 +31,13 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
-  }
+function summation(number) {
+  let whatever = 0
+  for(let i = 0; i <= number; i++) {
+    whatever += i
+  } return whatever
+}
+console.log(summation(5));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
