@@ -26,13 +26,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+.map will create a copy of the entire array, a use case would be a situation where you need to alter the data in the original array but you wish to keep the original array in tact.
+
+.reduce will use abuilt in call back function to take specified values of an array and return them as one value,
+a use case would be a situation where you want to find the sum or average of a specific data set on an object
+
+.filter will create a copy of an array filtered based on the specified values set by the programmer.
+a use case would be a situation where you wanted to filter and return specified values on an array.
+
 2. Explain the difference between a callback and a higher order function.
+
+higher order functions are functions that take another function or callback as one of it's arguments. The callback
+function is any function that is used as an argument in another function.
 
 3. Explain what a closure is.
 
+a closure is essentially the encompassing area of a function, usually represented by curly braces. The closure
+will also reference the outer scope of the function or it's lexical scope. 
+
 4. Describe the four principles of the 'this' keyword.
 
+global scope - reprents the window object or the entirety of javascript on the browser, it is the broadest reach that the this keyword can have but that's usually not a good thing
+
+inside the Object's Method - here the this keyword will represent the object to the left of it
+
+.call/.apply - will set the context of the this keyword for whatever function utilizes these methods and it will 
+this context will remain wether the function is called in the global scope or an object's method
+
+.bind - will set of the context of this to a specific object when a function is invoked
+
+
 5. Why do we need super() in an extended class?
+
+super() replaces the .call method which otherwise would have been used to grab the attributes from the parent class
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
